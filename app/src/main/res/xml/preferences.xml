@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	android:key="pong_main">
+	<PreferenceCategory android:title="@string/label_sound">
+		<CheckBoxPreference
+			android:key="muted"
+			android:title="@string/label_muted"
+			/>
+	</PreferenceCategory>
+	<PreferenceCategory android:title="@string/label_gameplay">
+		<ListPreference
+			android:key="strategy"
+			android:title="@string/label_ai_strategy"
+			android:summary="@string/summary_ai_strategy"
+			android:entries="@array/labels_ai_strategies"
+			android:entryValues="@array/values_ai_strategies" />
+			
+		<co.edu.udea.computacionmovil.pongdisk2.BarrasAtributos
+			android:key="handicap" android:title="@string/label_cpu_handicap"
+			android:text="-%s" android:summary="@string/summary_cpu_handicap"
+			android:dialogMessage="@string/label_cpu_handicap"
+			android:defaultValue="0" android:max="7" />
+
+		<co.edu.udea.computacionmovil.pongdisk2.BarrasAtributos
+			android:key="ball_speed" android:title="@string/label_ball_speed"
+			android:text="+%s" android:summary="@string/summary_ball_speed"
+			android:dialogMessage="@string/label_ball_speed"
+			android:defaultValue="0" android:max="15" />
+			
+		<co.edu.udea.computacionmovil.pongdisk2.BarrasAtributos
+			android:key="lives" android:title="@string/label_lives"
+			android:text="+%s" android:summary="@string/summary_lives"
+			android:dialogMessage="@string/label_lives"
+			android:defaultValue="0" android:max="9" />
+	</PreferenceCategory>
+</PreferenceScreen>

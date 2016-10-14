@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">PongDisk</string>
+    <string name="by_line">Grupo07</string>
+    <string name="paused">PAUSADO</string>
+    
+    <string name="one_player">Uno jugador</string>
+    <string name="two_players">Dos jugadores</string>
+    <string name="no_players">Sin jugadores</string>
+    
+    <string name="preferences">Preferencias</string>
+    
+    <string name="red_wins">¡Ganador Rojo!</string>
+    <string name="blue_wins">¡Ganador Azúl!</string>
+    
+    <string name="join_in">¡Toque para jugar!</string>
+	<string name="pause">Hacer pausa</string>
+</resources>
